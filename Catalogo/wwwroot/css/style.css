@@ -1,0 +1,112 @@
+﻿/*================================================================*/
+:root {
+    --transition: all .5s linear;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #D8D4B8;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+.container {
+    width: 1200px;
+    max-width: 100%;
+    margin-left: 10px;
+    justify-content: center;
+    padding: 5px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+/********** CARD PIZZA **********/
+
+.card__pro {
+    width: 300px;
+    max-width: 100%;
+    border-radius: 15px 15px 7px 7px;
+    transition: var(--transition);
+    margin: 10px;
+    position: relative;
+    overflow: hidden;
+    border: solid 1px rgba(0, 0, 0, .1);
+    background-color: #fff;
+}
+
+    .card__pro:hover {
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+        transition: var(--transition);
+    }
+
+.card__pro__header {
+    width: 100%;
+    height: 210px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    border-radius: 0px 0px 30px 30px;
+    position: relative;
+    overflow: hidden;
+}
+
+.pro__img {
+    width: 100%;
+    height: 100%;
+}
+
+/************CARD BODY***************/
+
+.card__body {
+    padding: 20px;
+}
+
+.card__title {
+    font-size: 18px;
+    color: #1C2331;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.cart__descriptions {
+    margin-top: 15px;
+    font-size: 15px;
+    color: #424242;
+    font-weight: 200;
+}
+.pro__precio {
+    font-size: 16px;
+    color: #1C2331;
+    text-transform: uppercase;
+    margin: 0;
+}
+/* ------------------------- */
+/* Footer */
+/* ------------------------- */
+footer .redes-sociales {
+    display: flex;
+    justify-content: right;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+
+    footer .redes-sociales a {
+        display: inline-block;
+        width: 60px;
+        height: 60px;
+        background: #000;
+        color: #fff;
+        margin: 20px;
+        text-align: center;
+        border-radius: 100px;
+        transition: .3s ease all;
+    }
+
+    footer .redes-sociales .whatsapp {
+        background: #24d41d;
+    }
+
+    footer .redes-sociales a i {
+        font-size: 40px;
+        line-height: 60px;
+    }
+.field-validation-error {
+    color: red;
+}

@@ -1,0 +1,28 @@
+﻿@{
+    Layout = null;
+}
+<form action="/admin/create" enctype="multipart/form-data" method="post">
+    <div class="mb-3">
+        <label class="form-label">Nombre</label>
+        <input type="text" required name="nombre" class="form-control" placeholder="Nombre">
+    </div>
+    <div class="mb-3">
+        <label class="form-label">Descripción</label>
+        <textarea type="text" required rows="5" name="descripcion" class="form-control" placeholder="Descripción"> </textarea>
+    </div>
+    <div class="mb-3">
+        <label class="form-label">Precio</label>
+        <input type="text" required name="precio" class="form-control" placeholder="Precio">
+    </div>
+    <div class="form-group">
+        <label class="form-label">Imagen Caratula</label>
+        <input type="file" name="img" accept="image/png, .jpeg, .jpg, image/gif" />
+    </div>
+    <div class="form-group">
+        <label class="form-label">Imagenes que se mostrarán despues</label>
+        <input type="file" required name="Files" multiple accept="image/png, .jpeg, .jpg, image/gif" />
+    </div>
+    <div class="modal-footer">
+        <button type="submit" class="btn btn-primary">Registrar</button>
+    </div>
+</form>
